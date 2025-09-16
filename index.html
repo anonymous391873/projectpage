@@ -45,33 +45,34 @@
     /* Section titles like "Datasets" (STATISTICS보다 큼) */
     .section-title {
       text-align: center;
-      font-size: 2.25rem; /* Datasets 등 */
+      font-size: 2.8rem; /* ▲ 더 키움 */
       font-weight: 800;
       margin-bottom: 1.25rem;
     }
 
-    /* Sub-section title like "STATISTICS" (section-title보다 작게) */
+    /* Sub-section title like "STATISTICS" (section-title보다 약간 작게) */
     .stats-title {
       text-align: center;
-      font-size: 1.9rem;   /* STATISTICS */
+      font-size: 2.5rem; /* ▲ 더 키움 */
       font-weight: 800;
       margin: 3rem 0 1.25rem 0;
     }
 
     /* Figure titles (표 제목들: 모두 같은 크기 + 검정) */
     .fig-title {
-      color: #111;         /* 표 제목은 검은색 */
-      font-size: 1.1rem;   /* 표 제목끼리는 동일 크기 */
+      color: #111;
+      font-size: 1.1rem;
       font-weight: 700;
       text-align: center;
       margin-bottom: 0.75rem;
     }
 
-    /* Keep old blue subtitle for legacy if needed (unused for figures now) */
+    /* Keep old blue subtitle for legacy if needed (unused for figures now)
+       EXAMPLES OF GENERATED AV-COMP TRIPLETS → 지금 DATASETS 글자 크기(기존 2.25rem) */
     .subtitle-blue {
       color: #1d70b8;
-      font-size: 1.25rem;
-      font-weight: 600;
+      font-size: 2.25rem; /* ▲ EXAMPLES를 DATASETS(예전 크기) 수준으로 키움 */
+      font-weight: 700;
       text-align: center;
       margin-bottom: 1rem;
     }
@@ -92,6 +93,14 @@
       padding: 2rem;
       border-radius: 10px;
     }
+    .abstract-box h2 {
+      text-align: center;           /* ▲ Abstract 제목 가운데 정렬 */
+      font-size: 2.6rem;            /* ▲ Abstract 제목 더 키움 */
+      margin-bottom: 0.75rem;
+    }
+    .abstract-box .content {
+      text-align: center;           /* ▲ 본문 가운데 정렬 */
+    }
     .abstract-box p { font-size: 1.05rem; }
 
     /* fieldset */
@@ -105,6 +114,18 @@
     .img-max-600 { max-width: 600px; width: 100%; height: auto; margin: 0 auto; }
     .img-large { max-width: 720px; width: 100%; height: auto; margin: 0 auto; } /* 워드클라우드 크게 */
     .figure { display: flex; flex-direction: column; align-items: center; }
+
+    /* ====== Horizontal scroll row for three stats figures ====== */
+    .fig-row-scroll {
+      display: flex;
+      gap: 1.5rem;
+      overflow-x: auto;          /* ▲ 가로 스크롤 가능 */
+      padding-bottom: 0.5rem;
+    }
+    .fig-card {
+      flex: 0 0 auto;            /* 가로로 이어붙이기 */
+      width: 600px;              /* 각 아이템 너비 고정 (이미지 max-600과 맞춤) */
+    }
   </style>
 </head>
 
@@ -138,7 +159,7 @@
       <h2 class="title is-3">Abstract</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <div class="content has-text-justified">
+          <div class="content">
             <p>
               Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce COmposed retrieval for Video with its Audio (COVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark of video pairs with cross-modal changes and textual queries describing the differences, enabling retrieval based on audio as well. We also propose Selective Gated Fusion (SGF), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. SGF outperforms traditional unimodal fusion and serves as a strong baseline for COVA.
             </p>
@@ -384,39 +405,42 @@
     <!-- ================== STATISTICS ================== -->
     <h3 class="stats-title">STATISTICS</h3>
 
-    <!-- 2×2: Unique Videos & Pairs + All / Train / Test language stats -->
-    <div class="columns is-multiline is-centered" style="margin-bottom: 2rem;">
-      <!-- (1) Unique videos & pairs -->
+    <!-- (1) Dataset Composition Overview: 단독 배치 -->
+    <div class="columns is-centered" style="margin-bottom: 2rem;">
       <div class="column is-half">
         <div class="figure">
-          <div class="fig-title">Number of Unique Videos and Total Pairs</div>
+          <div class="fig-title">Dataset Composition Overview</div>
           <figure>
             <img class="img-max-600" src="./static/images/video_count/unique_videos_count.png" alt="Unique Video and Pair Count">
           </figure>
         </div>
       </div>
+    </div>
+
+    <!-- (2)(3)(4) 세트: 한 줄(행) 가로 스크롤 -->
+    <div class="fig-row-scroll" style="margin-bottom: 2rem;">
       <!-- (2) All splits -->
-      <div class="column is-half">
+      <div class="fig-card">
         <div class="figure">
-          <div class="fig-title">Overall Language Statistics (All Splits)</div>
+          <div class="fig-title">Overall Aspect-wise Stastistics</div>
           <figure>
             <img class="img-max-600" src="./static/images/unique_word_length/ALL Videos statistics.png" alt="All Dataset Statistics">
           </figure>
         </div>
       </div>
       <!-- (3) Train -->
-      <div class="column is-half">
+      <div class="fig-card">
         <div class="figure">
-          <div class="fig-title">Training Set: Vocabulary & Sentence Length</div>
+          <div class="fig-title">Training Set Stastistics</div>
           <figure>
             <img class="img-max-600" src="./static/images/unique_word_length/TRAIN dataset statistics.png" alt="Train Dataset Statistics">
           </figure>
         </div>
       </div>
       <!-- (4) Test -->
-      <div class="column is-half">
+      <div class="fig-card">
         <div class="figure">
-          <div class="fig-title">Test Set: Vocabulary & Sentence Length</div>
+          <div class="fig-title">Test Set Stastistics</div>
           <figure>
             <img class="img-max-600" src="./static/images/unique_word_length/TEST dataset statistics.png" alt="Test Dataset Statistics">
           </figure>
