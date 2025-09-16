@@ -161,7 +161,7 @@
         <div class="column is-four-fifths">
           <div class="content">
             <p>
-              Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce COmposed retrieval for Video with its Audio (COVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark of video pairs with cross-modal changes and textual queries describing the differences, enabling retrieval based on audio as well. We also propose Selective Gated Fusion (SGF), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. SGF outperforms traditional unimodal fusion and serves as a strong baseline for COVA.
+              Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce Composed retrieval for Video with its Audio (COVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark of video pairs with cross-modal changes and textual queries describing the differences, enabling retrieval based on audio as well. We also propose AVT Compositional Fusion (AVT), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. AVT outperforms traditional unimodal fusion and serves as a strong baseline for COVA.
             </p>
           </div>
         </div>
@@ -378,8 +378,8 @@
       <div class="modification-text">
         <fieldset>
           <legend>Modification Text</legend>
-          <strong>Object:</strong> Replace the brown cushion and various items with a zebra-patterned blanket, a wooden floor, and a pillow with text.<br><br>
-          <strong>Action:</strong> Change the cat's action from standing on its hind legs to lying on a blanket, then standing up and walking away.<br><br>
+          <strong>Object:</strong> Replace the brown cushion and various items with a zebra-patterned blanket, a wooden floor.<br><br>
+          <strong>Action:</strong> Change the cat's action from standing on its hind legs to walking away.<br><br>
           <strong>Attribute:</strong> Change the environment from a naturally lit, casual home setting to a cozy bedroom with warm, dim lighting.<br><br>
           <strong>Audio:</strong> Remove the sound of lips kissing, leaving only a woman speaking and a cat meowing.
         </fieldset>
@@ -483,6 +483,30 @@
         </div>
       </div>
     </div>
+
+    <!-- (5) Clustering Distributions: Video (left) & Audio (right) -->
+    <div class="columns is-centered" style="margin-bottom: 2rem;">
+      <!-- Video-based Clustering -->
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Video-based Clustering (Video Distribution per Cluster)</div>
+          <figure>
+            <img class="img-max-600" src="./static/images/clustering/video_clustering_distribution.png" alt="Video Clustering Distribution">
+          </figure>
+        </div>
+      </div>
+
+      <!-- Audio-based Clustering -->
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Audio-based Clustering (Audio Distribution per Cluster)</div>
+          <figure>
+            <img class="img-max-600" src="./static/images/clustering/audio_clustering_distribution.png" alt="Audio Clustering Distribution">
+          </figure>
+        </div>
+      </div>
+    </div>
+
 
   </div>
 </section>
