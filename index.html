@@ -1,152 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anonymous Submission</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anonymous Project Page</title>
   <style>
-    .query-block {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
-      margin-bottom: 3rem;
-      overflow-x: auto;
-      padding-bottom: 1rem;
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
     }
-    .query-video {
-      flex: 0 0 300px;
-    }
-    .query-video video {
-      width: 100%;
-    }
-    .modification-text {
-      flex: 0 0 500px;
-      font-size: 1.05rem;
-      line-height: 1.5;
-    }
-    .target-videos {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 1rem;
-      align-items: flex-start;
-    }
-    .target-videos .target-wrapper {
-      width: 300px;
-    }
-    .target-videos video {
-      width: 100%;
-      border: 3px solid #ccc;
-    }
-    .target-videos video.target {
-      border: 3px solid #2ecc71;
-    }
-    .title.is-3 {
+
+    h1 {
       text-align: center;
     }
-    .query-caption {
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
+
+    .teaser {
       text-align: center;
+      margin-bottom: 40px;
     }
+
     .teaser img {
-      max-width: 50%;
+      width: 60%;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .group-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .video-pair {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .video-container {
+      flex: 1;
+      text-align: center;
+    }
+
+    .video-container video {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .modification-text {
+      flex: 1.5;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    fieldset {
+      border: 2px solid #999;
+      border-radius: 6px;
+      padding: 1rem;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
+    .target-label {
+      margin-top: 5px;
+      font-size: 13px;
+      color: #555;
     }
   </style>
 </head>
-
 <body>
 
-<!-- Title -->
-<section class="hero">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title is-1">Anonymous Submission</h1>
-    </div>
+  <h1>Anonymous Project Page</h1>
+
+  <div class="teaser">
+    <img src="teaser.png" alt="Teaser Image">
   </div>
-</section>
 
-<!-- Teaser Image -->
-<section class="section teaser">
-  <div class="container has-text-centered">
-    <img src="./static/images/fig1.png" alt="Teaser Image">
-  </div>
-</section>
-
-<!-- Abstract -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Abstract</h2>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          <p>
-          Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce COmposed retrieval for Video with its Audio (COVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark of video pairs with cross-modal changes and textual queries describing the differences, enabling retrieval based on audio as well. We also propose Selective Gated Fusion (SGF), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. SGF outperforms traditional unimodal fusion and serves as a strong baseline for COVA.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Dataset Example -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Dataset Example</h2>
-
-    <!-- Group 1 -->
-    <div class="query-block">
-      <!-- Query Video -->
-      <div class="query-video">
-        <video autoplay muted loop playsinline controls>
-          <source src="./static/videos/1/00_query_U6ElTfA5lSw_10.mkv" type="video/mp4">
-        </video>
-        <div class="query-caption">Query: U6ElTfA5lSw_10</div>
-      </div>
-
-      <!-- Modification Text -->
-      <div class="modification-text">
-        <strong>Modification Text:</strong><br><br>
-        <strong>object:</strong> Replace the plastic container and metal cage with a white wall and other background objects.<br><br>
-        <strong>action:</strong> Change the parrot's action from perching and moving between objects to being stationary and mimicking speech by opening and closing its beak.<br><br>
-        <strong>attribute:</strong> Change the environment from a dark background with focused lighting to an indoor setting with a plain white wall and soft, even lighting.<br><br>
-        <strong>audio:</strong> Replace the sound of a man speaking and a bird whistling with a loudly whistled tune, slight clicking, a female speaking, and bird vocalizations.
-      </div>
-
-      <!-- Target Videos -->
-      <div class="target-videos">
-        <div class="target-wrapper">
-          <video autoplay muted loop playsinline controls class="target">
-            <source src="./static/videos/1/eeNw3_nsEdM_310.mkv" type="video/mp4">
-          </video>
-        </div>
-        <div class="target-wrapper">
-          <video autoplay muted loop playsinline controls>
-            <source src="./static/videos/1/NBR-XVmJNjQ_60.mkv" type="video/mp4">
-          </video>
-        </div>
-        <div class="target-wrapper">
-          <video autoplay muted loop playsinline controls>
-            <source src="./static/videos/1/QM6X_mK_KAE_50.mkv" type="video/mp4">
-          </video>
-        </div>
-      </div>
+  <!-- Group 1 -->
+  <div class="group-title">Group 1 — Query: <code>U6ElTfA5lSw_10</code></div>
+  <div class="video-pair">
+    <div class="video-container">
+      <video src="group1/U6ElTfA5lSw_10.mp4" controls></video>
+      <div class="target-label">Query Video</div>
     </div>
 
-  </div>
-</section>
+    <div class="modification-text">
+      <fieldset>
+        <legend>Modification Text</legend>
+        <strong>Object:</strong> Replace the transparent plastic container with a black metal cage containing various colorful toys and perches.<br><br>
+        <strong>Action:</strong> Change the parrot's action from perching on a container to climbing out of the cage onto the top bar and observing its surroundings.<br><br>
+        <strong>Attribute:</strong> Change the dark background to an indoor setting near a window with blinds and natural light.<br><br>
+        <strong>Audio:</strong> Replace the sound of a man speaking and a bird whistling with a bird chirping, a person burping, and the bird imitating the burp.
+      </fieldset>
+    </div>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="container has-text-centered">
-    <p>This page is part of an anonymous submission.</p>
+    <div class="video-container">
+      <video src="group1/NBR-XVmJNjQ_60.mp4" controls></video>
+      <div class="target-label">Target: NBR-XVmJNjQ_60</div>
+    </div>
   </div>
-</footer>
+
+  <!-- Group 2 -->
+  <div class="group-title">Group 2 — Query: <code>7JCV2B6mbDo_30</code></div>
+  <div class="video-pair">
+    <div class="video-container">
+      <video src="group2/7JCV2B6mbDo_30.mp4" controls></video>
+      <div class="target-label">Query Video</div>
+    </div>
+
+    <div class="modification-text">
+      <fieldset>
+        <legend>Modification Text</legend>
+        <strong>Object:</strong> Replace the child in a pink shirt, teddy bear, and chair with a baby in a white outfit with red patterns.<br><br>
+        <strong>Action:</strong> Change the action from the child walking with support from a chair to a baby walking to an adult, touching their leg, and being picked up.<br><br>
+        <strong>Attribute:</strong> Update the setting to an indoor home environment with a wooden cabinet and refrigerator, and change the clothing to a light patterned outfit for the baby and a dark shirt with beige pants for the adult.<br><br>
+        <strong>Audio:</strong> Change the audio from a baby's loud cries to a baby crying while a kid sings and laughs.
+      </fieldset>
+    </div>
+
+    <div class="video-container">
+      <video src="group2/VcZykKLnTnI_30.mp4" controls></video>
+      <div class="target-label">Target: VcZykKLnTnI_30</div>
+    </div>
+  </div>
 
 </body>
 </html>
