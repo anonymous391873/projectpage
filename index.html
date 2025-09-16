@@ -11,130 +11,129 @@
   <link rel="icon" href="./static/images/favicon.svg">
 
   <style>
-    .video-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 1rem;
-    }
-    .video-item {
-      flex: 1 1 30%;
-      text-align: center;
-    }
-    .video-caption {
-      margin-top: 0.5rem;
-    }
     .query-block {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
       gap: 2rem;
       margin-bottom: 3rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
     }
     .query-video {
-      width: 30%;
+      flex: 0 0 300px;
+    }
+    .query-video video {
+      width: 100%;
+    }
+    .modification-text {
+      flex: 0 0 500px;
+      font-size: 1.05rem;
+      line-height: 1.5;
     }
     .target-videos {
-      flex: 1;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 1rem;
+      align-items: flex-start;
     }
     .target-videos video {
-      width: 180px;
+      width: 200px;
       border: 3px solid #ccc;
     }
     .target-videos video.target {
-      border: 3px solid #2ecc71; /* green border */
+      border: 3px solid #2ecc71;
+    }
+    .title.is-3 {
+      text-align: center;
     }
     .query-caption {
-      margin-top: 0.5rem;
       font-size: 0.9rem;
+      margin-top: 0.5rem;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title is-1">Anonymous Submission</h1>
-      </div>
-    </div>
-  </section>
 
-  <!-- Teaser Image -->
-  <section class="section">
+<!-- Title -->
+<section class="hero">
+  <div class="hero-body">
     <div class="container has-text-centered">
-      <img src="./static/images/teaser.png" alt="Teaser Image" style="max-width:100%;">
+      <h1 class="title is-1">Anonymous Submission</h1>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Abstract -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Abstract</h2>
-      <div class="content has-text-justified">
-        <p>
-        Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce COmposed retrieval for Video with its Audio (COVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark of video pairs with cross-modal changes and textual queries describing the differences, enabling retrieval based on audio as well. We also propose Selective Gated Fusion (SGF), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. SGF outperforms traditional unimodal fusion and serves as a strong baseline for COVA.
-        </p>
-      </div>
-    </div>
-  </section>
+<!-- Teaser Image -->
+<section class="section">
+  <div class="container has-text-centered">
+    <img src="./static/images/fig1.png" alt="Teaser Image" style="max-width:100%;">
+  </div>
+</section>
 
-  <!-- Dataset Example -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Dataset Example</h2>
-
-      <!-- Example: Group 1 -->
-      <div class="query-block">
-        <!-- Query video -->
-        <div class="query-video">
-          <video autoplay muted loop playsinline controls width="100%">
-            <source src="./static/videos/1/00_query_U6ElTfA5lSw_10.mkv" type="video/mp4">
-          </video>
-          <div class="query-caption">Query: A man speaks slowly and clearly.</div>
-        </div>
-
-        <!-- Target and negatives -->
-        <div class="target-videos">
-          <video autoplay muted loop playsinline controls class="target">
-            <source src="./static/videos/1/eeNw3_nsEdM_310.mkv" type="video/mp4">
-          </video>
-          <video autoplay muted loop playsinline controls>
-            <source src="./static/videos/1/NBR-XVmJNjQ_60.mkv" type="video/mp4">
-          </video>
-          <video autoplay muted loop playsinline controls>
-            <source src="./static/videos/1/QM6X_mK_KAE_50.mkv" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <!-- Example: Group 2 -->
-      <div class="query-block">
-        <!-- Query video -->
-        <div class="query-video">
-          <video autoplay muted loop playsinline controls width="100%">
-            <source src="./static/videos/2/00_query_7JCV2B6mbDo_30.mkv" type="video/mp4">
-          </video>
-          <div class="query-caption">Query: A baby laughs with background music added.</div>
-        </div>
-
-        <!-- Target and negatives -->
-        <div class="target-videos">
-          <video autoplay muted loop playsinline controls class="target">
-            <source src="./static/videos/2/VcZykKLnTnI_30.mkv" type="video/mp4">
-          </video>
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Abstract</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+          Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce COmposed retrieval for Video with its Audio (COVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark of video pairs with cross-modal changes and textual queries describing the differences, enabling retrieval based on audio as well. We also propose Selective Gated Fusion (SGF), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. SGF outperforms traditional unimodal fusion and serves as a strong baseline for COVA.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer">
-    <div class="container has-text-centered">
-      <p>This page is part of an anonymous submission.</p>
+<!-- Dataset Example -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Dataset Example</h2>
+
+    <!-- Group 1 -->
+    <div class="query-block">
+      <!-- Query Video -->
+      <div class="query-video">
+        <video autoplay muted loop playsinline controls>
+          <source src="./static/videos/1/00_query_U6ElTfA5lSw_10.mkv" type="video/mp4">
+        </video>
+        <div class="query-caption">Query: 00_query_U6ElTfA5lSw_10</div>
+      </div>
+
+      <!-- Modification Text -->
+      <div class="modification-text">
+        <strong>object:</strong> Replace the plastic container and metal cage with a white wall and other background objects.<br><br>
+        <strong>action:</strong> Change the parrot's action from perching and moving between objects to being stationary and mimicking speech by opening and closing its beak.<br><br>
+        <strong>attribute:</strong> Change the environment from a dark background with focused lighting to an indoor setting with a plain white wall and soft, even lighting.<br><br>
+        <strong>audio:</strong> Replace the sound of a man speaking and a bird whistling with a loudly whistled tune, slight clicking, a female speaking, and bird vocalizations.
+      </div>
+
+      <!-- Target Videos -->
+      <div class="target-videos">
+        <video autoplay muted loop playsinline controls class="target">
+          <source src="./static/videos/1/eeNw3_nsEdM_310.mkv" type="video/mp4">
+        </video>
+        <video autoplay muted loop playsinline controls>
+          <source src="./static/videos/1/NBR-XVmJNjQ_60.mkv" type="video/mp4">
+        </video>
+        <video autoplay muted loop playsinline controls>
+          <source src="./static/videos/1/QM6X_mK_KAE_50.mkv" type="video/mp4">
+        </video>
+      </div>
     </div>
-  </footer>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container has-text-centered">
+    <p>This page is part of an anonymous submission.</p>
+  </div>
+</footer>
+
 </body>
 </html>
