@@ -41,6 +41,11 @@
     .teaser img { max-width: 60%; }
     fieldset { border: 2px solid #999; border-radius: 6px; padding: 1rem; }
     legend { font-weight: bold; padding: 0 10px; }
+    .abstract-box {
+      background-color: #d3e8fc;
+      padding: 2rem;
+      border-radius: 10px;
+    }
   </style>
 </head>
 
@@ -50,7 +55,8 @@
 <section class="hero">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="title is-1">Anonymous Submission</h1>
+      <h1 class="title is-1">COVA: Text-Guided Composed Retrieval for Audio-Visual Content</h1>
+      <p class="subtitle is-5">Anonymous ICASSP Submission</p>
     </div>
   </div>
 </section>
@@ -67,15 +73,17 @@
 </section>
 
 <!-- Abstract -->
-<section class="section" style="background-color: #deeaf6;">
+<section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Abstract</h2>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          <p>
-          Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce COmposed retrieval for Video with its Audio (COVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark of video pairs with cross-modal changes and textual queries describing the differences, enabling retrieval based on audio as well. We also propose Selective Gated Fusion (SGF), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. SGF outperforms traditional unimodal fusion and serves as a strong baseline for COVA.
-          </p>
+    <div class="abstract-box">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce COmposed retrieval for Video with its Audio (COVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark of video pairs with cross-modal changes and textual queries describing the differences, enabling retrieval based on audio as well. We also propose Selective Gated Fusion (SGF), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. SGF outperforms traditional unimodal fusion and serves as a strong baseline for COVA.
+            </p>
+          </div>
         </div>
       </div>
     </div>
