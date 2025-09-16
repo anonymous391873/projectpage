@@ -32,14 +32,13 @@
       gap: 1rem;
       align-items: flex-start;
     }
-    .target-wrapper { width: 300px; text-align: center; } /* = query-video width */
+    .target-wrapper { width: 300px; text-align: center; }
     .target-wrapper video { width: 100%; border: 3px solid #ccc; }
     .target-wrapper video.target { border: 3px solid #2ecc71; }
     .target-caption { margin-top: 0.4rem; font-size: 0.9rem; }
     .title.is-3 { text-align: center; }
     .query-caption { font-size: 0.9rem; margin-top: 0.5rem; text-align: center; }
-    .teaser img { max-width: 60%; } /* teaser 60% */
-    /* fieldset visuals */
+    .teaser img { max-width: 60%; }
     fieldset { border: 2px solid #999; border-radius: 6px; padding: 1rem; }
     legend { font-weight: bold; padding: 0 10px; }
   </style>
@@ -60,11 +59,15 @@
 <section class="section teaser">
   <div class="container has-text-centered">
     <img src="./static/images/fig1.png" alt="Teaser Image">
+    <p style="margin-top: 1rem; font-size: 0.95rem; color: #555;">
+      Comparison between (a) existing CoVR, which only accounts for visual modifications, and (b) our proposed
+      COVA benchmark, which jointly considers both visual and auditory modifications for more realistic retrieval scenarios.
+    </p>
   </div>
 </section>
 
 <!-- Abstract -->
-<section class="section">
+<section class="section" style="background-color: #deeaf6;">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Abstract</h2>
     <div class="columns is-centered has-text-centered">
@@ -79,10 +82,13 @@
   </div>
 </section>
 
-<!-- Dataset Example -->
+<!-- Datasets -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Dataset Example</h2>
+    <h2 class="title is-3">Datasets</h2>
+
+    <!-- Triplets -->
+    <h3 class="title is-4" style="margin-top: 2rem;">EXAMPLES OF GENERATED AV-COMP TRIPLETS</h3>
 
     <!-- Group 1 -->
     <div class="query-block">
@@ -91,7 +97,7 @@
         <video autoplay muted loop playsinline controls>
           <source src="./static/videos/1/00_query_U6ElTfA5lSw_10.mkv" type="video/mp4">
         </video>
-        <div class="query-caption">Query: U6ElTfA5lSw_10</div> <!-- 00_query_ 제거 -->
+        <div class="query-caption"><strong>Query:</strong> U6ElTfA5lSw_10</div>
       </div>
 
       <!-- Modification Text -->
@@ -111,19 +117,19 @@
           <video autoplay muted loop playsinline controls class="target">
             <source src="./static/videos/1/NBR-XVmJNjQ_60.mkv" type="video/mp4">
           </video>
-          <div class="target-caption">Target: NBR-XVmJNjQ_60</div>
+          <div class="target-caption"><strong>Target:</strong> NBR-XVmJNjQ_60</div>
         </div>
         <div class="target-wrapper">
           <video autoplay muted loop playsinline controls>
             <source src="./static/videos/1/eeNw3_nsEdM_310.mkv" type="video/mp4">
           </video>
-          <div class="target-caption">Hard Negative: eeNw3_nsEdM_310</div>
+          <div class="target-caption"><strong>Hard Negative:</strong> eeNw3_nsEdM_310</div>
         </div>
         <div class="target-wrapper">
           <video autoplay muted loop playsinline controls>
             <source src="./static/videos/1/QM6X_mK_KAE_50.mkv" type="video/mp4">
           </video>
-          <div class="target-caption">Hard Negative: QM6X_mK_KAE_50</div>
+          <div class="target-caption"><strong>Hard Negative:</strong> QM6X_mK_KAE_50</div>
         </div>
       </div>
     </div>
@@ -135,7 +141,7 @@
         <video autoplay muted loop playsinline controls>
           <source src="./static/videos/2/00_query_7JCV2B6mbDo_30.mkv" type="video/mp4">
         </video>
-        <div class="query-caption">Query: 7JCV2B6mbDo_30</div> <!-- 00_query_ 제거 -->
+        <div class="query-caption"><strong>Query:</strong> 7JCV2B6mbDo_30</div>
       </div>
 
       <!-- Modification Text -->
@@ -155,9 +161,15 @@
           <video autoplay muted loop playsinline controls class="target">
             <source src="./static/videos/2/VcZykKLnTnI_30.mkv" type="video/mp4">
           </video>
-          <div class="target-caption">Target: VcZykKLnTnI_30</div>
+          <div class="target-caption"><strong>Target:</strong> VcZykKLnTnI_30</div>
         </div>
       </div>
+    </div>
+
+    <!-- Data Statistics -->
+    <h3 class="title is-4" style="margin-top: 3rem;">DATA STATISTICS</h3>
+    <div class="content">
+      <p>[Placeholder for dataset statistics chart or summary]</p>
     </div>
 
   </div>
