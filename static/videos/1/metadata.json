@@ -1,0 +1,52 @@
+{
+  "cluster_type": "audio",
+  "cluster_id": 1,
+  "query_id": "U6ElTfA5lSw_10",
+  "total_pairs": 3,
+  "total_targets": 3,
+  "copied_targets": 3,
+  "pairs": [
+    {
+      "query_id": "U6ElTfA5lSw_10",
+      "target_id": "eeNw3_nsEdM_310",
+      "query_video_caption": "**Object:**\n- A green parrot with yellow markings on its head and wings.\n- A transparent plastic container with a label featuring a bird image.\n- A metal cage structure with bars.\n\n**Action:**\n- The parrot is perched on the edge of the transparent plastic container.\n- It moves its head and beak, appearing to interact with the container.\n- The parrot then shifts its position and perches on the metal bars of the cage, continuing to look around.\n\n**Attribute:**\n- The background is dark, suggesting the setting might be indoors or at night.\n- The lighting is focused on the parrot, highlighting its vibrant green feathers and yellow markings.\n- The overall mood appears calm and observational, focusing on the parrot's behavior and interaction with its environment.",
+      "query_audio_caption": "a man speaks and a bird whistles",
+      "target_video_caption": "### Object:\n- **Main Subject:** A parrot with vibrant green feathers, yellow patches around its eyes and beak, and a black beak.\n- **Background Objects:** A white wall, part of a dark-colored object (possibly furniture), and a blurred yellow and red object on the right side.\n\n### Action:\n- The parrot is stationary but slightly shifts its head and beak position, opening and closing its beak as if it is speaking or mimicking speech.\n- Its eyes move slightly, indicating attentiveness or engagement with something off-camera.\n\n### Attribute:\n- **Environment:** Indoors, with a simple background consisting of a plain white wall and minimalistic surroundings.\n- **Mood:** Calm and focused, with the parrot appearing alert and engaged.\n- **Appearance:** The parrot's feathers are well-groomed, and its colors are bright and vivid, highlighting its natural beauty. The lighting is soft and even, enhancing the details of the bird's features.",
+      "target_audio_caption": "a tune is whistled loudly, slight clicking occurs, an adult female speaks, and a bird vocalizes",
+      "video_modification_text": {
+        "object": "Replace the plastic container and metal cage with a white wall and other background objects.",
+        "action": "Change the parrot's action from perching and moving between objects to being stationary and mimicking speech by opening and closing its beak.",
+        "attribute": "Change the environment from a dark background with focused lighting to an indoor setting with a plain white wall and soft, even lighting."
+      },
+      "audio_modification_text": "Replace the sound of a man speaking and a bird whistling with a loudly whistled tune, slight clicking, a female speaking, and bird vocalizations."
+    },
+    {
+      "query_id": "U6ElTfA5lSw_10",
+      "target_id": "QM6X_mK_KAE_50",
+      "query_video_caption": "**Object:**\n- A green parrot with yellow markings on its head and wings.\n- A transparent plastic container with a label featuring a bird image.\n- A metal cage structure with bars.\n\n**Action:**\n- The parrot is perched on the edge of the transparent plastic container.\n- It moves its head and beak, appearing to interact with the container.\n- The parrot then shifts its position and perches on the metal bars of the cage, continuing to look around.\n\n**Attribute:**\n- The background is dark, suggesting the setting might be indoors or at night.\n- The lighting is focused on the parrot, highlighting its vibrant green feathers and yellow markings.\n- The overall mood appears calm and observational, focusing on the parrot's behavior and interaction with its environment.",
+      "query_audio_caption": "a man speaks and a bird whistles",
+      "target_video_caption": "**Object:**\n- A green parrot with yellow and blue markings on its head and neck.\n- Green leaves and branches in the background.\n\n**Action:**\n- The parrot is perched on a branch.\n- It moves its head slightly, looking around.\n- Its beak opens and closes as if it is vocalizing or preening.\n\n**Attribute:**\n- The setting appears to be outdoors, possibly near a building with a tiled wall in the background.\n- The lighting is natural, suggesting daytime.\n- The parrot's feathers are vibrant, with a mix of green, yellow, and blue colors. The overall mood is calm and naturalistic.",
+      "target_audio_caption": "a woman speaks as a child cries and screams",
+      "video_modification_text": {
+        "object": "Change the parrot in a cage with a container to a parrot with yellow and blue markings on a branch with green leaves.",
+        "action": "Change the parrot's action from perching on a container and cage to perching on a branch and moving its head and beak.",
+        "attribute": "Transform the dark, indoor setting into a natural, outdoor daytime environment."
+      },
+      "audio_modification_text": "Replace the sound of a man speaking and a bird whistling with a woman speaking as a child cries and screams."
+    },
+    {
+      "query_id": "U6ElTfA5lSw_10",
+      "target_id": "NBR-XVmJNjQ_60",
+      "query_video_caption": "**Object:**\n- A green parrot with yellow markings on its head and wings.\n- A transparent plastic container with a label featuring a bird image.\n- A metal cage structure with bars.\n\n**Action:**\n- The parrot is perched on the edge of the transparent plastic container.\n- It moves its head and beak, appearing to interact with the container.\n- The parrot then shifts its position and perches on the metal bars of the cage, continuing to look around.\n\n**Attribute:**\n- The background is dark, suggesting the setting might be indoors or at night.\n- The lighting is focused on the parrot, highlighting its vibrant green feathers and yellow markings.\n- The overall mood appears calm and observational, focusing on the parrot's behavior and interaction with its environment.",
+      "query_audio_caption": "a man speaks and a bird whistles",
+      "target_video_caption": "### Object:\n- **Parrot**: A green parrot with yellow markings around its eyes and beak.\n- **Cage**: A black metal cage containing various colorful toys and perches.\n\n### Action:\n1. The parrot is initially perched inside the cage.\n2. It then climbs out of the cage onto the top bar.\n3. The parrot looks around, moving its head and body slightly.\n4. It appears to be observing its surroundings closely.\n\n### Attribute:\n- **Environment**: Indoors, near a window with blinds, suggesting natural light coming through.\n- **Mood**: Calm and curious, as the parrot seems attentive and engaged with its environment.\n- **Appearance**: The parrot has vibrant green feathers with yellow accents, and the cage is equipped with colorful toys and perches. The background is simple, with plain walls and minimal distractions.",
+      "target_audio_caption": "a bird chirps nearby, followed by a person burping and then a bird imitating the burp",
+      "video_modification_text": {
+        "object": "Replace the transparent plastic container with a black metal cage containing various colorful toys and perches.",
+        "action": "Change the parrot's action from perching on a container to climbing out of the cage onto the top bar and observing its surroundings.",
+        "attribute": "Change the dark background to an indoor setting near a window with blinds and natural light."
+      },
+      "audio_modification_text": "Replace the sound of a man speaking and a bird whistling with a bird chirping, a person burping, and the bird imitating the burp."
+    }
+  ]
+}
