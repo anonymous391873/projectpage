@@ -71,7 +71,7 @@
        EXAMPLES OF GENERATED AV-COMP TRIPLETS → 지금 DATASETS 글자 크기(기존 2.25rem) */
     .subtitle-blue {
       color: #1d70b8;
-      font-size: 2.05rem; /* ▲ EXAMPLES를 DATASETS(예전 크기) 수준으로 키움 */
+      font-size: 1.85rem; /* ▲ EXAMPLES를 DATASETS(예전 크기) 수준으로 키움 */
       font-weight: 700;
       text-align: center;
       margin-bottom: 1rem;
@@ -406,8 +406,9 @@
     <!-- ================== STATISTICS ================== -->
     <h3 class="stats-title">STATISTICS</h3>
 
-    <!-- (1) Dataset Composition Overview: 단독 배치 -->
+    <!-- (1 + 2) Composition + Overall Aspect-wise -->
     <div class="columns is-centered" style="margin-bottom: 2rem;">
+      <!-- (1) Dataset Composition Overview (Left) -->
       <div class="column is-half">
         <div class="figure">
           <div class="fig-title">Dataset Composition Overview</div>
@@ -416,38 +417,18 @@
           </figure>
         </div>
       </div>
-    </div>
 
-    <!-- (2)(3)(4) 세트: 한 줄(행) 가로 스크롤 -->
-    <div class="fig-row-scroll" style="margin-bottom: 2rem;">
-      <!-- (2) All splits -->
-      <div class="fig-card">
+      <!-- (2) Overall Aspect-Wise Statistics (Right) -->
+      <div class="column is-half">
         <div class="figure">
-          <div class="fig-title">Overall Aspect-Wise Stastistics</div>
+          <div class="fig-title">Overall Aspect-Wise Statistics</div>
           <figure>
             <img class="img-max-600" src="./static/images/unique_word_length/ALL Videos statistics.png" alt="All Dataset Statistics">
           </figure>
         </div>
       </div>
-      <!-- (3) Train -->
-      <div class="fig-card">
-        <div class="figure">
-          <div class="fig-title">Training Set Aspect-Wise Stastistics</div>
-          <figure>
-            <img class="img-max-600" src="./static/images/unique_word_length/TRAIN dataset statistics.png" alt="Train Dataset Statistics">
-          </figure>
-        </div>
-      </div>
-      <!-- (4) Test -->
-      <div class="fig-card">
-        <div class="figure">
-          <div class="fig-title">Test Set Aspect-Wise Stastistics</div>
-          <figure>
-            <img class="img-max-600" src="./static/images/unique_word_length/TEST dataset statistics.png" alt="Test Dataset Statistics">
-          </figure>
-        </div>
-      </div>
     </div>
+
 
     <!-- 2×2: Word Clouds (bigger) -->
     <div class="columns is-multiline is-centered">
