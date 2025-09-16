@@ -11,7 +11,7 @@
   <link rel="icon" href="./static/images/favicon.svg">
 
   <style>
-    /* Video Section */
+    /* ====== Layout: Query / Targets ====== */
     .query-block {
       display: flex;
       flex-direction: row;
@@ -24,7 +24,7 @@
     .query-video video { width: 100%; }
     .modification-text {
       flex: 0 0 500px;
-      font-size: 1.05rem;  /* 🔵 본문 글씨 크기 (조절하려면 이 값 변경) */
+      font-size: 1.05rem;
       line-height: 1.5;
     }
     .target-videos {
@@ -35,55 +35,76 @@
     }
     .target-wrapper { width: 300px; text-align: center; }
     .target-wrapper video { width: 100%; border: 3px solid #ccc; }
-    .target-wrapper video.target { border: 3px solid #2ecc71; } /* 타겟 초록 테두리 */
+    .target-wrapper video.target { border: 3px solid #2ecc71; }
     .target-caption { margin-top: 0.4rem; font-size: 0.9rem; }
     .query-caption { font-size: 0.9rem; margin-top: 0.5rem; text-align: center; }
 
-    /* Section Titles */
-    .title.is-3 {
+    /* ====== Title hierarchy ====== */
+    /* Main page title uses Bulma .title.is-1 (가장 큼) */
+
+    /* Section titles like "Datasets" (STATISTICS보다 큼) */
+    .section-title {
       text-align: center;
-      font-size: 2rem !important; /* 🔵 'Abstract', 'Datasets' 제목 크기 (조절 가능) */
+      font-size: 2.25rem; /* Datasets 등 */
+      font-weight: 800;
+      margin-bottom: 1.25rem;
     }
 
-    /* 소제목 - 파란색, 크기 업 */
+    /* Sub-section title like "STATISTICS" (section-title보다 작게) */
+    .stats-title {
+      text-align: center;
+      font-size: 1.9rem;   /* STATISTICS */
+      font-weight: 800;
+      margin: 3rem 0 1.25rem 0;
+    }
+
+    /* Figure titles (표 제목들: 모두 같은 크기 + 검정) */
+    .fig-title {
+      color: #111;         /* 표 제목은 검은색 */
+      font-size: 1.1rem;   /* 표 제목끼리는 동일 크기 */
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Keep old blue subtitle for legacy if needed (unused for figures now) */
     .subtitle-blue {
-      color: #1d70b8;      /* 🔵 소제목 글자색 (변경하려면 이 값) */
-      font-size: 1.25rem;  /* 🔵 소제목 크기 한 단계 증가 */
+      color: #1d70b8;
+      font-size: 1.25rem;
       font-weight: 600;
       text-align: center;
-      margin-bottom: 1rem; /* 🔵 소제목 아래 한 줄 간격 */
+      margin-bottom: 1rem;
     }
 
-    /* Teaser Section */
-    .teaser img { max-width: 60%; } /* 🔵 티저 이미지 크기 (퍼센트로 조절) */
+    /* Teaser */
+    .teaser img { max-width: 60%; }
     .teaser-caption {
-      max-width: 800px; /* 📏 캡션 좌우 폭 제한 (값 키우면 더 넓어짐) */
+      max-width: 800px;
       margin: 1rem auto 0;
-      font-size: 0.95rem; /* 🔵 캡션 글씨 크기 */
-      color: #555;        /* 🔵 캡션 글자색 */
+      font-size: 0.95rem;
+      color: #555;
       text-align: center;
     }
 
-    /* Abstract 배경 박스 */
+    /* Abstract box */
     .abstract-box {
-      background-color: #deeefd; /* 🔵 Abstract 배경색 (연한 파랑) */
+      background-color: #deeefd;
       padding: 2rem;
       border-radius: 10px;
     }
+    .abstract-box p { font-size: 1.05rem; }
 
-    /* Abstract 내부 텍스트 */
-    .abstract-box p {
-      font-size: 1.05rem; /* 🔵 Abstract 본문 글씨 크기 */
-    }
-
-    /* fieldset 디자인 */
+    /* fieldset */
     fieldset { border: 2px solid #999; border-radius: 6px; padding: 1rem; }
     legend { font-weight: bold; padding: 0 10px; }
 
-    /* 제목 아래 여백 */
-    .subtitle.is-5 {
-      margin-top: 1rem; /* 🔵 타이틀 아래 보조제목 간격 (0.5~1.0rem 사이 추천) */
-    }
+    /* spacing under the subtitle under H1 */
+    .subtitle.is-5 { margin-top: 1rem; }
+
+    /* ====== Image sizing helpers ====== */
+    .img-max-600 { max-width: 600px; width: 100%; height: auto; margin: 0 auto; }
+    .img-large { max-width: 720px; width: 100%; height: auto; margin: 0 auto; } /* 워드클라우드 크게 */
+    .figure { display: flex; flex-direction: column; align-items: center; }
   </style>
 </head>
 
@@ -131,7 +152,7 @@
 <!-- Datasets -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Datasets</h2>
+    <h2 class="section-title">Datasets</h2>
 
     <h3 class="subtitle-blue" style="margin-top: 2rem;">EXAMPLES OF GENERATED AV-COMP TRIPLETS</h3>
 
@@ -218,7 +239,7 @@
         <div class="query-caption"><strong>Query:</strong> cew6UO_TiWI_60</div>
       </div>
 
-      <!-- Modification Text (from provided JSON) -->
+      <!-- Modification Text -->
       <div class="modification-text">
         <fieldset>
           <legend>Modification Text</legend>
@@ -256,7 +277,7 @@
         <div class="query-caption"><strong>Query:</strong> qkQ7ooIUNd0_60</div>
       </div>
 
-      <!-- Modification Text (from provided JSON) -->
+      <!-- Modification Text -->
       <div class="modification-text">
         <fieldset>
           <legend>Modification Text</legend>
@@ -294,7 +315,7 @@
         <div class="query-caption"><strong>Query:</strong> 2QsWqMg_j08_30</div>
       </div>
 
-      <!-- Modification Text (from provided JSON) -->
+      <!-- Modification Text -->
       <div class="modification-text">
         <fieldset>
           <legend>Modification Text</legend>
@@ -327,13 +348,12 @@
       <!-- Query Video -->
       <div class="query-video">
         <video autoplay muted loop playsinline controls>
-          <!-- ⚠️ 파일 규칙을 따라 추정 경로 사용 -->
           <source src="./static/videos/6/00_query_lxVT6iqlJ2k_27.mkv" type="video/mp4">
         </video>
         <div class="query-caption"><strong>Query:</strong> lxVT6iqlJ2k_27</div>
       </div>
 
-      <!-- Modification Text (from provided JSON) -->
+      <!-- Modification Text -->
       <div class="modification-text">
         <fieldset>
           <legend>Modification Text</legend>
@@ -348,7 +368,6 @@
       <div class="target-videos">
         <div class="target-wrapper">
           <video autoplay muted loop playsinline controls class="target">
-            <!-- ⚠️ 파일 규칙을 따라 추정 경로 사용 -->
             <source src="./static/videos/6/Kx0eryXWMgE_7.mkv" type="video/mp4">
           </video>
           <div class="target-caption"><strong>Target:</strong> Kx0eryXWMgE_7</div>
@@ -362,69 +381,84 @@
       </div>
     </div>
 
-  <!-- Data Statistics -->
-  <h3 class="subtitle-blue" style="margin-top: 3rem;">STATISTICS</h3>
+    <!-- ================== STATISTICS ================== -->
+    <h3 class="stats-title">STATISTICS</h3>
 
-  <!-- 1. Unique Video and Pair Count -->
-  <div class="columns is-vcentered is-centered" style="margin-bottom: 2rem;">
-    <div class="column is-narrow has-text-centered">
-      <h4 class="subtitle-blue">Number of Unique Videos and Total Pairs</h4>
-      <figure>
-        <img src="./static/images/video_count/unique_videos_count.png" style="max-width: 600px;" alt="Unique Video Count">
-      </figure>
+    <!-- 2×2: Unique Videos & Pairs + All / Train / Test language stats -->
+    <div class="columns is-multiline is-centered" style="margin-bottom: 2rem;">
+      <!-- (1) Unique videos & pairs -->
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Number of Unique Videos and Total Pairs</div>
+          <figure>
+            <img class="img-max-600" src="./static/images/video_count/unique_videos_count.png" alt="Unique Video and Pair Count">
+          </figure>
+        </div>
+      </div>
+      <!-- (2) All splits -->
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Overall Language Statistics (All Splits)</div>
+          <figure>
+            <img class="img-max-600" src="./static/images/unique_word_length/ALL Videos statistics.png" alt="All Dataset Statistics">
+          </figure>
+        </div>
+      </div>
+      <!-- (3) Train -->
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Training Set: Vocabulary & Sentence Length</div>
+          <figure>
+            <img class="img-max-600" src="./static/images/unique_word_length/TRAIN dataset statistics.png" alt="Train Dataset Statistics">
+          </figure>
+        </div>
+      </div>
+      <!-- (4) Test -->
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Test Set: Vocabulary & Sentence Length</div>
+          <figure>
+            <img class="img-max-600" src="./static/images/unique_word_length/TEST dataset statistics.png" alt="Test Dataset Statistics">
+          </figure>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- 2. Sentence Statistics -->
-  <div class="columns is-centered is-multiline" style="margin-bottom: 2rem;">
-    <div class="column is-one-third has-text-centered">
-      <h4 class="subtitle-blue">Overall Language Statistics (All Splits)</h4>
-      <figure>
-        <img src="./static/images/unique_word_length/ALL Videos statistics.png" style="max-width: 100%;" alt="All Dataset Statistics">
-      </figure>
+    <!-- 2×2: Word Clouds (bigger) -->
+    <div class="columns is-multiline is-centered">
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Object Word Cloud</div>
+          <figure>
+            <img class="img-large" src="./static/images/wordcloud/wordcloud_object_all_videos.png" alt="Object WordCloud">
+          </figure>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Action Word Cloud</div>
+          <figure>
+            <img class="img-large" src="./static/images/wordcloud/wordcloud_action_all_videos.png" alt="Action WordCloud">
+          </figure>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Attribute Word Cloud</div>
+          <figure>
+            <img class="img-large" src="./static/images/wordcloud/wordcloud_attribute_all_videos.png" alt="Attribute WordCloud">
+          </figure>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="figure">
+          <div class="fig-title">Audio Word Cloud</div>
+          <figure>
+            <img class="img-large" src="./static/images/wordcloud/wordcloud_audio_modification_text_all_videos.png" alt="Audio WordCloud">
+          </figure>
+        </div>
+      </div>
     </div>
-    <div class="column is-one-third has-text-centered">
-      <h4 class="subtitle-blue">Training Set: Vocabulary & Length</h4>
-      <figure>
-        <img src="./static/images/unique_word_length/TRAIN dataset statistics.png" style="max-width: 100%;" alt="Train Dataset Statistics">
-      </figure>
-    </div>
-    <div class="column is-one-third has-text-centered">
-      <h4 class="subtitle-blue">Test Set: Vocabulary & Length</h4>
-      <figure>
-        <img src="./static/images/unique_word_length/TEST dataset statistics.png" style="max-width: 100%;" alt="Test Dataset Statistics">
-      </figure>
-    </div>
-  </div>
-
-  <!-- 3. Word Cloud Visualizations -->
-  <div class="columns is-centered is-multiline">
-    <div class="column is-one-quarter has-text-centered">
-      <h4 class="subtitle-blue">Object Word Cloud</h4>
-      <figure>
-        <img src="./static/images/wordcloud/wordcloud_object_all_videos.png" style="max-width: 100%;" alt="Object WordCloud">
-      </figure>
-    </div>
-    <div class="column is-one-quarter has-text-centered">
-      <h4 class="subtitle-blue">Action Word Cloud</h4>
-      <figure>
-        <img src="./static/images/wordcloud/wordcloud_action_all_videos.png" style="max-width: 100%;" alt="Action WordCloud">
-      </figure>
-    </div>
-    <div class="column is-one-quarter has-text-centered">
-      <h4 class="subtitle-blue">Attribute Word Cloud</h4>
-      <figure>
-        <img src="./static/images/wordcloud/wordcloud_attribute_all_videos.png" style="max-width: 100%;" alt="Attribute WordCloud">
-      </figure>
-    </div>
-    <div class="column is-one-quarter has-text-centered">
-      <h4 class="subtitle-blue">Audio Word Cloud</h4>
-      <figure>
-        <img src="./static/images/wordcloud/wordcloud_audio_modification_text_all_videos.png" style="max-width: 100%;" alt="Audio WordCloud">
-      </figure>
-    </div>
-  </div>
-
 
   </div>
 </section>
