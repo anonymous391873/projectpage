@@ -11,6 +11,7 @@
   <link rel="icon" href="./static/images/favicon.svg">
 
   <style>
+    /* Video Section */
     .query-block {
       display: flex;
       flex-direction: row;
@@ -36,15 +37,51 @@
     .target-wrapper video { width: 100%; border: 3px solid #ccc; }
     .target-wrapper video.target { border: 3px solid #2ecc71; }
     .target-caption { margin-top: 0.4rem; font-size: 0.9rem; }
-    .title.is-3 { text-align: center; }
     .query-caption { font-size: 0.9rem; margin-top: 0.5rem; text-align: center; }
+
+    /* Section Titles */
+    .title.is-3 { 
+      text-align: center; 
+      font-size: 2rem !important; /* 🔵 제목 글씨 크기 조절: 기존보다 조금 큼 */ 
+    }
+
+    /* 소제목 - 파란색 */
+    .subtitle-blue {
+      color: #1d70b8; /* 🔵 파란색 글씨 설정 */
+      font-size: 1.15rem; /* 🔵 글씨 크기 조절 */
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* Teaser Section */
     .teaser img { max-width: 60%; }
-    fieldset { border: 2px solid #999; border-radius: 6px; padding: 1rem; }
-    legend { font-weight: bold; padding: 0 10px; }
+    .teaser-caption {
+      max-width: 800px; /* 📏 좌우 폭 제한 */
+      margin: 1rem auto 0;
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+    }
+
+    /* Abstract 배경 박스 */
     .abstract-box {
-      background-color: #d3e8fc;
+      background-color: #deeaf6;
       padding: 2rem;
       border-radius: 10px;
+    }
+
+    /* Abstract 내부 텍스트 */
+    .abstract-box p {
+      font-size: 1.05rem; /* 🔵 본문 글씨 크기 */
+    }
+
+    /* fieldset 디자인 */
+    fieldset { border: 2px solid #999; border-radius: 6px; padding: 1rem; }
+    legend { font-weight: bold; padding: 0 10px; }
+
+    /* 제목 아래 여백 */
+    .subtitle.is-5 {
+      margin-top: 0.5rem; /* 🔵 반 줄 정도 띄움 */
     }
   </style>
 </head>
@@ -65,7 +102,7 @@
 <section class="section teaser">
   <div class="container has-text-centered">
     <img src="./static/images/fig1.png" alt="Teaser Image">
-    <p style="margin-top: 1rem; font-size: 0.95rem; color: #555;">
+    <p class="teaser-caption">
       Comparison between (a) existing CoVR, which only accounts for visual modifications, and (b) our proposed
       COVA benchmark, which jointly considers both visual and auditory modifications for more realistic retrieval scenarios.
     </p>
@@ -95,8 +132,7 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3">Datasets</h2>
 
-    <!-- Triplets -->
-    <h3 class="title is-4" style="margin-top: 2rem;">EXAMPLES OF GENERATED AV-COMP TRIPLETS</h3>
+    <h3 class="subtitle-blue" style="margin-top: 2rem;">EXAMPLES OF GENERATED AV-COMP TRIPLETS</h3>
 
     <!-- Group 1 -->
     <div class="query-block">
@@ -144,7 +180,6 @@
 
     <!-- Group 2 -->
     <div class="query-block">
-      <!-- Query Video -->
       <div class="query-video">
         <video autoplay muted loop playsinline controls>
           <source src="./static/videos/2/00_query_7JCV2B6mbDo_30.mkv" type="video/mp4">
@@ -152,7 +187,6 @@
         <div class="query-caption"><strong>Query:</strong> 7JCV2B6mbDo_30</div>
       </div>
 
-      <!-- Modification Text -->
       <div class="modification-text">
         <fieldset>
           <legend>Modification Text</legend>
@@ -163,7 +197,6 @@
         </fieldset>
       </div>
 
-      <!-- Target Videos -->
       <div class="target-videos">
         <div class="target-wrapper">
           <video autoplay muted loop playsinline controls class="target">
@@ -175,7 +208,7 @@
     </div>
 
     <!-- Data Statistics -->
-    <h3 class="title is-4" style="margin-top: 3rem;">DATA STATISTICS</h3>
+    <h3 class="subtitle-blue" style="margin-top: 3rem;">DATA STATISTICS</h3>
     <div class="content">
       <p>[Placeholder for dataset statistics chart or summary]</p>
     </div>
