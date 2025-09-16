@@ -1,0 +1,38 @@
+{
+  "cluster_type": "video",
+  "cluster_id": 7,
+  "query_id": "2QsWqMg_j08_30",
+  "total_pairs": 2,
+  "total_targets": 2,
+  "copied_targets": 2,
+  "pairs": [
+    {
+      "query_id": "2QsWqMg_j08_30",
+      "target_id": "6O6rqrMirkU_30",
+      "query_video_caption": "**Object:**\n- A man wearing a striped shirt and a headscarf.\n- A white horse with a bridle and reins.\n\n**Action:**\n- The man is leading the white horse along a sidewalk.\n- The horse walks calmly beside the man.\n- They move past a building with arched doorways and continue down the street.\n\n**Attribute:**\n- The setting appears to be an urban area with buildings, sidewalks, and parked vehicles.\n- The lighting suggests it is daytime with clear weather.\n- The overall mood is calm and routine, possibly indicating a daily activity.",
+      "query_audio_caption": "clip clops of a horse on a hard surface, a child speaks",
+      "target_video_caption": "### Object:\n- **Man**: Wearing traditional attire (white shirt, black vest, white trousers) and holding a rope.\n- **Horse**: Brown horse being led by the man.\n- **Other People**: Several individuals standing around, some wearing casual clothing.\n\n### Action:\n1. The man is leading the horse by its reins.\n2. The horse is bending down, possibly to graze or interact with something on the ground.\n3. The man adjusts the horse's position while maintaining control.\n4. Other people observe the interaction from a distance.\n\n### Attribute:\n- **Environment**: Outdoor setting with a paved area, a building with an open door, and a fence in the background.\n- **Mood**: Casual and observational, with a focus on the interaction between the man and the horse.\n- **Appearance**: Bright daylight, clear visibility, and a rural or semi-rural setting. The horse appears calm, and the man is attentive and focused.",
+      "target_audio_caption": "Hooves hit the ground and people shout.",
+      "video_modification_text": {
+        "object": "Change the man's attire from a striped shirt and headscarf to traditional attire, change the horse from white to brown, and add other people to the scene.",
+        "action": "Change the action from the man leading the horse calmly down a sidewalk to the horse bending down while the man adjusts its position as others observe.",
+        "attribute": "Transform the urban setting into a rural or semi-rural outdoor environment with a paved area."
+      },
+      "audio_modification_text": "Replace the sound of a child speaking with people shouting."
+    },
+    {
+      "query_id": "2QsWqMg_j08_30",
+      "target_id": "DukP2K1j2Kg_30",
+      "query_video_caption": "**Object:**\n- A man wearing a striped shirt and a headscarf.\n- A white horse with a bridle and reins.\n\n**Action:**\n- The man is leading the white horse along a sidewalk.\n- The horse walks calmly beside the man.\n- They move past a building with arched doorways and continue down the street.\n\n**Attribute:**\n- The setting appears to be an urban area with buildings, sidewalks, and parked vehicles.\n- The lighting suggests it is daytime with clear weather.\n- The overall mood is calm and routine, possibly indicating a daily activity.",
+      "query_audio_caption": "clip clops of a horse on a hard surface, a child speaks",
+      "target_video_caption": "### Object:\n- **People**: A man in a striped shirt, a child in a red shirt, and another person riding a white horse.\n- **Horse**: A white horse being ridden by a person.\n- **Buildings**: Low-rise buildings on either side of the street.\n- **Other Objects**: A bicycle, a dog, and some scattered debris on the ground.\n\n### Action:\n1. The man in the striped shirt stands near the white horse, gesturing and speaking.\n2. The child in the red shirt stands nearby, observing the horse and the man.\n3. The person riding the white horse moves forward along the street.\n4. The camera follows the horse as it walks past the man and the child.\n\n### Attribute:\n- **Environment**: An urban street with low-rise buildings, some appearing unfinished or under construction.\n- **Mood**: Casual and everyday, with a focus on the interaction between the people and the horse.\n- **Appearance**: The street is narrow, with visible signs of wear and tear, including dirt and debris. The lighting suggests it might be late afternoon or early evening.",
+      "target_audio_caption": "people speak as a motorcycle engine runs",
+      "video_modification_text": {
+        "object": "Change the scene from a man leading a horse to a man and a child observing another person riding the horse, and add a bicycle, a dog, and debris.",
+        "action": "Change the action from the man leading the horse to him standing and gesturing while another person rides the horse past him and a nearby child.",
+        "attribute": "Change the setting from a clear daytime urban area to a narrow street with unfinished buildings and debris during the late afternoon or early evening."
+      },
+      "audio_modification_text": "Replace the sound of horse clip-clops and a child speaking with people speaking and a running motorcycle engine."
+    }
+  ]
+}

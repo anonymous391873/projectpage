@@ -1,0 +1,38 @@
+{
+  "cluster_type": "video",
+  "cluster_id": 74,
+  "query_id": "qkQ7ooIUNd0_60",
+  "total_pairs": 2,
+  "total_targets": 2,
+  "copied_targets": 2,
+  "pairs": [
+    {
+      "query_id": "qkQ7ooIUNd0_60",
+      "target_id": "YRg_topnqRI_40",
+      "query_video_caption": "### Object:\n- **Sheep**: A group of sheep, including adults and lambs, are the primary objects in the video.\n- **Grass**: The sheep are standing on a grassy field.\n- **Trees**: In the background, there are trees lining the edge of the field.\n\n### Action:\n1. **Group Movement**: The sheep are walking together in a line across the grassy field.\n2. **Close-Up Interaction**: The camera zooms in on a few sheep, focusing on their faces and interactions.\n3. **Standing Still**: Some sheep stand still while others continue to move, creating a dynamic scene.\n\n### Attribute:\n- **Environment**: The setting is an open grassy field with a backdrop of trees, suggesting a rural or pastoral area.\n- **Lighting**: The lighting appears natural, likely during the day, with sunlight filtering through the trees.\n- **Mood**: The scene conveys a calm and serene atmosphere, typical of a peaceful countryside setting.\n- **Appearance**: The sheep have white wool, and some have tags on their ears, indicating they might be part of a managed flock. The grass is lush and green, adding to the natural beauty of the scene.",
+      "query_audio_caption": "goats bleat and a bell rings",
+      "target_video_caption": "### Object:\n- **Sheep**: A group of sheep, including both adults and lambs, are the primary objects in the video.\n- **Grass Field**: The setting is an open grassy field.\n\n### Action:\n- The sheep are running across the grassy field in a scattered manner.\n- Lambs are seen playfully chasing each other and moving quickly.\n- Adult sheep are also moving, some following the lambs and others running independently.\n\n### Attribute:\n- **Environment**: The scene takes place in a lush green grassy field, suggesting a rural or pastoral setting.\n- **Mood**: The video conveys a lively and energetic atmosphere, with the movement of the sheep indicating activity and playfulness.\n- **Appearance**: The sheep vary in color, including white, brown, and speckled patterns. The grass is vibrant and well-maintained, adding to the natural and serene feel of the scene.",
+      "target_audio_caption": "birds chirp and a goat bleats then a man and woman speak",
+      "video_modification_text": {
+        "object": "Remove the trees from the background, focusing only on the sheep and the grassy field.",
+        "action": "Change the sheep's movement from walking in a line to running across the field in a scattered and playful manner.",
+        "attribute": "Shift the mood from calm and serene to lively and energetic, and change the sheep's appearance from all white to a mix of white, brown, and speckled patterns."
+      },
+      "audio_modification_text": "Replace the sound of a bell ringing with birds chirping and a man and woman speaking."
+    },
+    {
+      "query_id": "qkQ7ooIUNd0_60",
+      "target_id": "E4ECgoC8ahg_20",
+      "query_video_caption": "### Object:\n- **Sheep**: A group of sheep, including adults and lambs, are the primary objects in the video.\n- **Grass**: The sheep are standing on a grassy field.\n- **Trees**: In the background, there are trees lining the edge of the field.\n\n### Action:\n1. **Group Movement**: The sheep are walking together in a line across the grassy field.\n2. **Close-Up Interaction**: The camera zooms in on a few sheep, focusing on their faces and interactions.\n3. **Standing Still**: Some sheep stand still while others continue to move, creating a dynamic scene.\n\n### Attribute:\n- **Environment**: The setting is an open grassy field with a backdrop of trees, suggesting a rural or pastoral area.\n- **Lighting**: The lighting appears natural, likely during the day, with sunlight filtering through the trees.\n- **Mood**: The scene conveys a calm and serene atmosphere, typical of a peaceful countryside setting.\n- **Appearance**: The sheep have white wool, and some have tags on their ears, indicating they might be part of a managed flock. The grass is lush and green, adding to the natural beauty of the scene.",
+      "query_audio_caption": "goats bleat and a bell rings",
+      "target_video_caption": "### Object:\n- **Sheep**: A group of sheep, including adults and lambs, are the primary objects in the video.\n- **Grass Field**: The sheep are grazing in a lush green grass field.\n- **Fence**: A wire fence is visible in the background, indicating a contained area.\n\n### Action:\n- The sheep are actively grazing on the grass.\n- Some sheep are walking around, while others are standing still.\n- Lambs are seen close to adult sheep, possibly nursing or staying near their mothers.\n- The sheep move slowly across the field, occasionally turning their heads to look around.\n\n### Attribute:\n- **Environment**: The setting is an open grassy field, likely part of a farm or rural area.\n- **Mood**: The scene has a calm and peaceful atmosphere, typical of a pastoral setting.\n- **Appearance**: The sheep have white wool with some showing patches of brown. They have tags on their ears, indicating they might be part of a managed herd. The grass is vibrant green, suggesting it is well-maintained and healthy. The background includes a stone wall and a wire fence, adding to the rural feel.",
+      "target_audio_caption": "sheeps bleat and livestock vocalizes while wind blows and birds chirp",
+      "video_modification_text": {
+        "object": "Replace the trees in the background with a wire fence.",
+        "action": "Change the action from the sheep walking in a line to actively grazing, with lambs staying close to adult sheep.",
+        "attribute": "Add brown patches to some of the sheeps' white wool and include a stone wall and wire fence in the background."
+      },
+      "audio_modification_text": "Change the audio from goats bleating and a bell ringing to sheep bleating, livestock vocalizing, blowing wind, and chirping birds."
+    }
+  ]
+}

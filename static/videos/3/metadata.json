@@ -1,0 +1,38 @@
+{
+  "cluster_type": "video",
+  "cluster_id": 94,
+  "query_id": "cew6UO_TiWI_60",
+  "total_pairs": 2,
+  "total_targets": 2,
+  "copied_targets": 2,
+  "pairs": [
+    {
+      "query_id": "cew6UO_TiWI_60",
+      "target_id": "II7uLXgHSD8_30",
+      "query_video_caption": "### Object:\n- **Ducks**: Two white ducks with orange beaks.\n- **Swimming Pool**: A small, circular pool with clear blue water.\n- **Background Elements**: Fencing, greenery, and some outdoor structures.\n\n### Action:\n1. The first duck is seen swimming in the center of the pool, moving its legs to propel itself through the water.\n2. The second duck joins the first one, swimming towards it from the left side of the frame.\n3. Both ducks continue to swim around the pool, occasionally changing direction and interacting with each other.\n\n### Attribute:\n- **Environment**: Outdoor setting with a fenced area and greenery in the background, suggesting a backyard or garden.\n- **Mood**: Calm and serene, with the ducks appearing relaxed and enjoying their time in the water.\n- **Appearance**: The pool water is clear and blue, reflecting light and creating ripples as the ducks move. The ducks have clean, white feathers and bright orange beaks. The overall scene is bright and sunny.",
+      "query_audio_caption": "splashing followed by quacking",
+      "target_video_caption": "**Object:**\n- A duck\n- A blue inflatable pool\n\n**Action:**\n- The duck is swimming in the pool.\n- It moves from one side of the pool to the other.\n- The duck occasionally looks around and adjusts its position.\n\n**Attribute:**\n- The pool is filled with clear blue water.\n- The background includes a wooden fence, suggesting an outdoor setting.\n- The lighting indicates it is daytime with natural sunlight.",
+      "target_audio_caption": "a woman speaks while a duck quacks",
+      "video_modification_text": {
+        "object": "The one duck remains the same, but its color changes from white to brown and green.",
+        "action": "The action remains unchanged.",
+        "attribute": "A wooden fence is added to the background."
+    },
+      "audio_modification_text": "Replace the sound of splashing with a woman speaking, while a duck quacks."
+    },
+    {
+      "query_id": "cew6UO_TiWI_60",
+      "target_id": "q0uIdT4wzRk_20",
+      "query_video_caption": "### Object:\n- **Ducks**: Two white ducks with orange beaks.\n- **Swimming Pool**: A small, circular pool with clear blue water.\n- **Background Elements**: Fencing, greenery, and some outdoor structures.\n\n### Action:\n1. The first duck is seen swimming in the center of the pool, moving its legs to propel itself through the water.\n2. The second duck joins the first one, swimming towards it from the left side of the frame.\n3. Both ducks continue to swim around the pool, occasionally changing direction and interacting with each other.\n\n### Attribute:\n- **Environment**: Outdoor setting with a fenced area and greenery in the background, suggesting a backyard or garden.\n- **Mood**: Calm and serene, with the ducks appearing relaxed and enjoying their time in the water.\n- **Appearance**: The pool water is clear and blue, reflecting light and creating ripples as the ducks move. The ducks have clean, white feathers and bright orange beaks. The overall scene is bright and sunny.",
+      "query_audio_caption": "splashing followed by quacking",
+      "target_video_caption": "### Object:\n- **Ducks**: Two white ducks.\n- **Swimming Pools**: Two blue plastic pools filled with water.\n- **Grass**: The ground is covered with green grass.\n- **Background Elements**: A metal shed, trees, and a fence.\n\n### Action:\n1. **Duck 1 (Left)**:\n   - Initially standing on the grass near the edge of the left pool.\n   - Moves closer to the pool, pecking at the grass.\n   - Eventually lies down on the grass near the pool.\n2. **Duck 2 (Right)**:\n   - Swimming in the right pool.\n   - Occasionally splashing water with its wings and feet.\n   - Stays mostly in the pool throughout the video.\n\n### Attribute:\n- **Environment**: Outdoor setting with green grass, a metal shed, trees, and a fence in the background.\n- **Mood**: Calm and serene, typical of a peaceful outdoor scene.\n- **Appearance**:\n  - Ducks: White feathers, orange beaks and feet.\n  - Pools: Bright blue plastic pools filled with clear water.\n  - Grass: Lush and green, scattered with a few leaves.\n  - Background: Natural and slightly overcast lighting, suggesting",
+      "target_audio_caption": "birds are tweeting from a distance as water is splashing mildly",
+      "video_modification_text": {
+        "object": "Replace the single circular pool with two blue plastic pools on a grassy area, and add a metal shed to the background.",
+        "action": "Change the action from both ducks swimming together in one pool to one duck swimming in a pool while the other is on the grass near a second pool.",
+        "attribute": "Change the bright, sunny environment to a calmer, overcast scene with lush green grass."
+      },
+      "audio_modification_text": "Replace the sound of quacking and splashing with distant birds tweeting and mild water splashing."
+    }
+  ]
+}

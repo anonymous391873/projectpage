@@ -1,0 +1,48 @@
+{
+  "query_id": "lxVT6iqlJ2k_27",
+  "total_pairs": 3,
+  "pairs": [
+    {
+      "query_id": "lxVT6iqlJ2k_27",
+      "target_id": "Kx0eryXWMgE_7",
+      "query_video_caption": "### Object:\n- **Cat**: A black and white cat wearing a blue collar with a red tag.\n- **Background Objects**:\n  - A brown cushion or couch.\n  - Various items on a surface, including a CD, a book titled \"Java Jumps,\" and some other indistinct objects.\n\n### Action:\n- The cat is standing on its hind legs, leaning against the brown cushion.\n- It appears to be looking around, moving its head slightly from side to side.\n- The cat's ears are perked up, indicating attentiveness.\n\n### Attribute:\n- **Environment**: Indoors, likely a home setting with a casual and lived-in atmosphere.\n- **Mood**: Relaxed and curious.\n- **Appearance**: The cat has a clean and well-groomed coat. The background includes everyday household items, suggesting a comfortable and familiar environment. The lighting is natural, possibly from a nearby window.",
+      "query_audio_caption": "a series of lips kissing followed by a cat meowing a woman talking",
+      "target_video_caption": "**Object:**\n- A black and white cat\n- A zebra-patterned blanket\n- A wooden floor\n- A pillow with text on it\n\n**Action:**\n1. The cat is initially lying down on a zebra-patterned blanket.\n2. The cat then stands up and walks off the blanket.\n3. The cat turns its head to look at the camera.\n\n**Attribute:**\n- The setting appears to be indoors, likely in a bedroom.\n- The lighting is warm and dim, suggesting an evening or nighttime scene.\n- The cat has a black and white coat with a blue collar.\n- The background includes a wooden floor and a pillow with some text, adding to the cozy indoor atmosphere.",
+      "target_audio_caption": "a woman speaking and a cat meowing",
+      "video_modification_text": {
+        "object": "Replace the brown cushion and various items with a zebra-patterned blanket, a wooden floor, and a pillow with text.",
+        "action": "Change the cat's action from standing on its hind legs to lying on a blanket, then standing up and walking away.",
+        "attribute": "Change the environment from a naturally lit, casual home setting to a cozy bedroom with warm, dim lighting."
+      },
+      "audio_modification_text": "Remove the sound of lips kissing, leaving only a woman speaking and a cat meowing."
+    },
+    {
+      "query_id": "lxVT6iqlJ2k_27",
+      "target_id": "4_MSTYZF8ns_0",
+      "query_video_caption": "### Object:\n- **Cat**: A black and white cat wearing a blue collar with a red tag.\n- **Background Objects**:\n  - A brown cushion or couch.\n  - Various items on a surface, including a CD, a book titled \"Java Jumps,\" and some other indistinct objects.\n\n### Action:\n- The cat is standing on its hind legs, leaning against the brown cushion.\n- It appears to be looking around, moving its head slightly from side to side.\n- The cat's ears are perked up, indicating attentiveness.\n\n### Attribute:\n- **Environment**: Indoors, likely a home setting with a casual and lived-in atmosphere.\n- **Mood**: Relaxed and curious.\n- **Appearance**: The cat has a clean and well-groomed coat. The background includes everyday household items, suggesting a comfortable and familiar environment. The lighting is natural, possibly from a nearby window.",
+      "query_audio_caption": "a series of lips kissing followed by a cat meowing a woman talking",
+      "target_video_caption": "### Object:\n- **Cat**: A gray and white cat with a sleek coat and pointed ears.\n- **Clothing**: The cat is interacting with some clothing items, possibly on a bed or surface.\n\n### Action:\n1. The cat is seen climbing or jumping onto a piece of dark-colored clothing.\n2. It then moves around, exploring the area.\n3. The camera focuses closely on the cat's face as it looks directly at the camera, showing its whiskers and eyes.\n\n### Attribute:\n- **Environment**: Indoors, likely a bedroom or living space with tiled flooring and furniture visible in the background.\n- **Mood**: Casual and playful, capturing the natural behavior of a curious cat.\n- **Appearance**: The lighting is warm and indoor, highlighting the cat's fur texture and facial features. The background includes neutral colors like beige and blue.",
+      "target_audio_caption": "rattling and rustling are occurring, a cat meows and purrs, and an adult starts to speak",
+      "video_modification_text": {
+        "object": "Change the cat from a black and white one with a blue collar to a gray and white cat interacting with clothing.",
+        "action": "Modify the cat's action from standing on its hind legs to climbing on clothing, exploring, and looking directly at the camera.",
+        "attribute": "Change the mood from relaxed and curious to casual and playful, and update the environment to an indoor space with tiled flooring and warm lighting."
+      },
+      "audio_modification_text": "Replace the sounds of lips kissing and a woman talking with rattling and rustling, a cat purring, and an adult speaking."
+    },
+    {
+      "query_id": "lxVT6iqlJ2k_27",
+      "target_id": "2JgHbC7yyTU_0",
+      "query_video_caption": "### Object:\n- **Cat**: A black and white cat wearing a blue collar with a red tag.\n- **Background Objects**:\n  - A brown cushion or couch.\n  - Various items on a surface, including a CD, a book titled \"Java Jumps,\" and some other indistinct objects.\n\n### Action:\n- The cat is standing on its hind legs, leaning against the brown cushion.\n- It appears to be looking around, moving its head slightly from side to side.\n- The cat's ears are perked up, indicating attentiveness.\n\n### Attribute:\n- **Environment**: Indoors, likely a home setting with a casual and lived-in atmosphere.\n- **Mood**: Relaxed and curious.\n- **Appearance**: The cat has a clean and well-groomed coat. The background includes everyday household items, suggesting a comfortable and familiar environment. The lighting is natural, possibly from a nearby window.",
+      "query_audio_caption": "a series of lips kissing followed by a cat meowing a woman talking",
+      "target_video_caption": "### Object:\n- **Main Subject:** A white cat with gray patches on its back and tail.\n- **Background Objects:** \n  - A carpeted floor.\n  - A black object (possibly furniture) in the background.\n  - A yellow and black strap or cord.\n\n### Action:\n- The cat is standing upright on its hind legs.\n- It appears to be looking upwards, possibly at something off-camera.\n- The cat's mouth opens slightly, revealing its teeth, suggesting it might be meowing or reacting to something.\n- The cat's head moves slightly, indicating attentiveness or curiosity.\n\n### Attribute:\n- **Environment:** Indoor setting with a carpeted floor.\n- **Mood:** Curious and alert.\n- **Appearance:** The cat has a predominantly white coat with distinct gray patches on its back and tail. The background includes household items, giving a casual, homey feel. The lighting is warm and natural.",
+      "target_audio_caption": "an animal makes a sound while metal clinks in the background",
+  "video_modification_text": {
+    "object": "Change the cat from a black and white cat with a collar to a white cat with gray patches, and remove the brown cushion and books, replacing them with a carpeted floor and a black object.",
+    "action": "Modify the cat's action from sitting on the floor and looking around to standing upright on its hind legs, looking upwards, and slightly opening its mouth.",
+    "attribute": "Shift the mood from relaxed and curious to curious and alert."
+  },
+  "audio_modification_text": "Replace the sounds of kissing, a cat meowing, and a woman talking with an animal sound and metal clinking in the background."
+}
+  ]
+}

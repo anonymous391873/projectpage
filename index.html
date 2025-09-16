@@ -24,7 +24,7 @@
     .query-video video { width: 100%; }
     .modification-text {
       flex: 0 0 500px;
-      font-size: 1.05rem;
+      font-size: 1.05rem;  /* 🔵 본문 글씨 크기 (조절하려면 이 값 변경) */
       line-height: 1.5;
     }
     .target-videos {
@@ -35,45 +35,45 @@
     }
     .target-wrapper { width: 300px; text-align: center; }
     .target-wrapper video { width: 100%; border: 3px solid #ccc; }
-    .target-wrapper video.target { border: 3px solid #2ecc71; }
+    .target-wrapper video.target { border: 3px solid #2ecc71; } /* 타겟 초록 테두리 */
     .target-caption { margin-top: 0.4rem; font-size: 0.9rem; }
     .query-caption { font-size: 0.9rem; margin-top: 0.5rem; text-align: center; }
 
     /* Section Titles */
-    .title.is-3 { 
-      text-align: center; 
-      font-size: 2rem !important; /* 🔵 제목 글씨 크기 조절: 기존보다 조금 큼 */ 
+    .title.is-3 {
+      text-align: center;
+      font-size: 2rem !important; /* 🔵 'Abstract', 'Datasets' 제목 크기 (조절 가능) */
     }
 
     /* 소제목 - 파란색, 크기 업 */
     .subtitle-blue {
-      color: #1d70b8; /* 🔵 파란색 글씨 설정 */
-      font-size: 1.25rem; /* 🔵 글씨 크기 한 단계 증가 */
+      color: #1d70b8;      /* 🔵 소제목 글자색 (변경하려면 이 값) */
+      font-size: 1.25rem;  /* 🔵 소제목 크기 한 단계 증가 */
       font-weight: 600;
       text-align: center;
-      margin-bottom: 1rem; /* 🔵 아래 본문과 한 줄 간격 */
+      margin-bottom: 1rem; /* 🔵 소제목 아래 한 줄 간격 */
     }
 
     /* Teaser Section */
-    .teaser img { max-width: 60%; }
+    .teaser img { max-width: 60%; } /* 🔵 티저 이미지 크기 (퍼센트로 조절) */
     .teaser-caption {
-      max-width: 800px; /* 📏 좌우 폭 제한 */
+      max-width: 800px; /* 📏 캡션 좌우 폭 제한 (값 키우면 더 넓어짐) */
       margin: 1rem auto 0;
-      font-size: 0.95rem;
-      color: #555;
+      font-size: 0.95rem; /* 🔵 캡션 글씨 크기 */
+      color: #555;        /* 🔵 캡션 글자색 */
       text-align: center;
     }
 
     /* Abstract 배경 박스 */
     .abstract-box {
-      background-color: #deeefd;
+      background-color: #deeefd; /* 🔵 Abstract 배경색 (연한 파랑) */
       padding: 2rem;
       border-radius: 10px;
     }
 
     /* Abstract 내부 텍스트 */
     .abstract-box p {
-      font-size: 1.05rem; /* 🔵 본문 글씨 크기 */
+      font-size: 1.05rem; /* 🔵 Abstract 본문 글씨 크기 */
     }
 
     /* fieldset 디자인 */
@@ -82,7 +82,7 @@
 
     /* 제목 아래 여백 */
     .subtitle.is-5 {
-      margin-top: 1rem; /* 🔵 반 줄 정도 띄움 */
+      margin-top: 1rem; /* 🔵 타이틀 아래 보조제목 간격 (0.5~1.0rem 사이 추천) */
     }
   </style>
 </head>
@@ -135,7 +135,7 @@
 
     <h3 class="subtitle-blue" style="margin-top: 2rem;">EXAMPLES OF GENERATED AV-COMP TRIPLETS</h3>
 
-    <!-- Group 1 -->
+    <!-- ===== Group 1 ===== -->
     <div class="query-block">
       <!-- Query Video -->
       <div class="query-video">
@@ -179,7 +179,7 @@
       </div>
     </div>
 
-    <!-- Group 2 -->
+    <!-- ===== Group 2 ===== -->
     <div class="query-block">
       <div class="query-video">
         <video autoplay muted loop playsinline controls>
@@ -204,6 +204,154 @@
             <source src="./static/videos/2/VcZykKLnTnI_30.mkv" type="video/mp4">
           </video>
           <div class="target-caption"><strong>Target:</strong> VcZykKLnTnI_30</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Group 3 ===== -->
+    <div class="query-block">
+      <!-- Query Video -->
+      <div class="query-video">
+        <video autoplay muted loop playsinline controls>
+          <source src="./static/videos/3/00_query_cew6UO_TiWI_60.mkv" type="video/mp4">
+        </video>
+        <div class="query-caption"><strong>Query:</strong> cew6UO_TiWI_60</div>
+      </div>
+
+      <!-- Modification Text (from provided JSON) -->
+      <div class="modification-text">
+        <fieldset>
+          <legend>Modification Text</legend>
+          <strong>Object:</strong> The one duck remains the same, but its color changes from white to brown and green.<br><br>
+          <strong>Action:</strong> The action remains unchanged.<br><br>
+          <strong>Attribute:</strong> A wooden fence is added to the background.<br><br>
+          <strong>Audio:</strong> Replace the sound of splashing with a woman speaking, while a duck quacks.
+        </fieldset>
+      </div>
+
+      <!-- Targets & Hard Negatives -->
+      <div class="target-videos">
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls class="target">
+            <source src="./static/videos/3/II7uLXgHSD8_30.mkv" type="video/mp4">
+          </video>
+          <div class="target-caption"><strong>Target:</strong> II7uLXgHSD8_30</div>
+        </div>
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls>
+            <source src="./static/videos/3/q0uIdT4wzRk_20.mkv" type="video/mp4">
+          </video>
+          <div class="target-caption"><strong>Hard Negative:</strong> q0uIdT4wzRk_20</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Group 4 ===== -->
+    <div class="query-block">
+      <!-- Query Video -->
+      <div class="query-video">
+        <video autoplay muted loop playsinline controls>
+          <source src="./static/videos/4/00_query_qkQ7ooIUNd0_60.mkv" type="video/mp4">
+        </video>
+        <div class="query-caption"><strong>Query:</strong> qkQ7ooIUNd0_60</div>
+      </div>
+
+      <!-- Modification Text (from provided JSON) -->
+      <div class="modification-text">
+        <fieldset>
+          <legend>Modification Text</legend>
+          <strong>Object:</strong> Remove the trees from the background, focusing only on the sheep and the grassy field.<br><br>
+          <strong>Action:</strong> Change the sheep's movement from walking in a line to running across the field in a scattered and playful manner.<br><br>
+          <strong>Attribute:</strong> Shift the mood from calm and serene to lively and energetic, and change the sheep's appearance from all white to a mix of white, brown, and speckled patterns.<br><br>
+          <strong>Audio:</strong> Replace the sound of a bell ringing with birds chirping and a man and woman speaking.
+        </fieldset>
+      </div>
+
+      <!-- Targets & Hard Negatives -->
+      <div class="target-videos">
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls class="target">
+            <source src="./static/videos/4/YRg_topnqRI_40.mkv" type="video/mp4">
+          </video>
+          <div class="target-caption"><strong>Target:</strong> YRg_topnqRI_40</div>
+        </div>
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls>
+            <source src="./static/videos/4/E4ECgoC8ahg_20.mkv" type="video/mp4">
+          </video>
+          <div class="target-caption"><strong>Hard Negative:</strong> E4ECgoC8ahg_20</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Group 5 ===== -->
+    <div class="query-block">
+      <!-- Query Video -->
+      <div class="query-video">
+        <video autoplay muted loop playsinline controls>
+          <source src="./static/videos/5/00_query_2QsWqMg_j08_30.mkv" type="video/mp4">
+        </video>
+        <div class="query-caption"><strong>Query:</strong> 2QsWqMg_j08_30</div>
+      </div>
+
+      <!-- Modification Text (from provided JSON) -->
+      <div class="modification-text">
+        <fieldset>
+          <legend>Modification Text</legend>
+          <strong>Object:</strong> Change the man's attire from a striped shirt and headscarf to traditional attire, change the horse from white to brown, and add other people to the scene.<br><br>
+          <strong>Action:</strong> Change the action from the man leading the horse calmly down a sidewalk to the horse bending down while the man adjusts its position as others observe.<br><br>
+          <strong>Attribute:</strong> Transform the urban setting into a rural or semi-rural outdoor environment with a paved area.<br><br>
+          <strong>Audio:</strong> Replace the sound of a child speaking with people shouting.
+        </fieldset>
+      </div>
+
+      <!-- Targets & Hard Negatives -->
+      <div class="target-videos">
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls class="target">
+            <source src="./static/videos/5/6O6rqrMirkU_30.mkv" type="video/mp4">
+          </video>
+          <div class="target-caption"><strong>Target:</strong> 6O6rqrMirkU_30</div>
+        </div>
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls>
+            <source src="./static/videos/5/DukP2K1j2Kg_30.mkv" type="video/mp4">
+          </video>
+          <div class="target-caption"><strong>Hard Negative:</strong> DukP2K1j2Kg_30</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Group 6 ===== -->
+    <div class="query-block">
+      <!-- Query Video -->
+      <div class="query-video">
+        <video autoplay muted loop playsinline controls>
+          <!-- ⚠️ 파일 규칙을 따라 추정 경로 사용 -->
+          <source src="./static/videos/6/00_query_lxVT6iqlJ2k_27.mkv" type="video/mp4">
+        </video>
+        <div class="query-caption"><strong>Query:</strong> lxVT6iqlJ2k_27</div>
+      </div>
+
+      <!-- Modification Text (from provided JSON) -->
+      <div class="modification-text">
+        <fieldset>
+          <legend>Modification Text</legend>
+          <strong>Object:</strong> Replace the brown cushion and various items with a zebra-patterned blanket, a wooden floor, and a pillow with text.<br><br>
+          <strong>Action:</strong> Change the cat's action from standing on its hind legs to lying on a blanket, then standing up and walking away.<br><br>
+          <strong>Attribute:</strong> Change the environment from a naturally lit, casual home setting to a cozy bedroom with warm, dim lighting.<br><br>
+          <strong>Audio:</strong> Remove the sound of lips kissing, leaving only a woman speaking and a cat meowing.
+        </fieldset>
+      </div>
+
+      <!-- Target -->
+      <div class="target-videos">
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls class="target">
+            <!-- ⚠️ 파일 규칙을 따라 추정 경로 사용 -->
+            <source src="./static/videos/6/Kx0eryXWMgE_7.mkv" type="video/mp4">
+          </video>
+          <div class="target-caption"><strong>Target:</strong> Kx0eryXWMgE_7</div>
         </div>
       </div>
     </div>
