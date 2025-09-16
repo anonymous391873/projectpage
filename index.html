@@ -36,8 +36,11 @@
       gap: 1rem;
       align-items: flex-start;
     }
+    .target-videos .target-wrapper {
+      width: 300px;
+    }
     .target-videos video {
-      width: 200px;
+      width: 100%;
       border: 3px solid #ccc;
     }
     .target-videos video.target {
@@ -50,6 +53,9 @@
       font-size: 0.9rem;
       margin-top: 0.5rem;
       text-align: center;
+    }
+    .teaser img {
+      max-width: 50%;
     }
   </style>
 </head>
@@ -66,9 +72,9 @@
 </section>
 
 <!-- Teaser Image -->
-<section class="section">
+<section class="section teaser">
   <div class="container has-text-centered">
-    <img src="./static/images/fig1.png" alt="Teaser Image" style="max-width:100%;">
+    <img src="./static/images/fig1.png" alt="Teaser Image">
   </div>
 </section>
 
@@ -100,11 +106,12 @@
         <video autoplay muted loop playsinline controls>
           <source src="./static/videos/1/00_query_U6ElTfA5lSw_10.mkv" type="video/mp4">
         </video>
-        <div class="query-caption">Query: 00_query_U6ElTfA5lSw_10</div>
+        <div class="query-caption">Query: U6ElTfA5lSw_10</div>
       </div>
 
       <!-- Modification Text -->
       <div class="modification-text">
+        <strong>Modification Text:</strong><br><br>
         <strong>object:</strong> Replace the plastic container and metal cage with a white wall and other background objects.<br><br>
         <strong>action:</strong> Change the parrot's action from perching and moving between objects to being stationary and mimicking speech by opening and closing its beak.<br><br>
         <strong>attribute:</strong> Change the environment from a dark background with focused lighting to an indoor setting with a plain white wall and soft, even lighting.<br><br>
@@ -113,15 +120,21 @@
 
       <!-- Target Videos -->
       <div class="target-videos">
-        <video autoplay muted loop playsinline controls class="target">
-          <source src="./static/videos/1/eeNw3_nsEdM_310.mkv" type="video/mp4">
-        </video>
-        <video autoplay muted loop playsinline controls>
-          <source src="./static/videos/1/NBR-XVmJNjQ_60.mkv" type="video/mp4">
-        </video>
-        <video autoplay muted loop playsinline controls>
-          <source src="./static/videos/1/QM6X_mK_KAE_50.mkv" type="video/mp4">
-        </video>
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls class="target">
+            <source src="./static/videos/1/eeNw3_nsEdM_310.mkv" type="video/mp4">
+          </video>
+        </div>
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls>
+            <source src="./static/videos/1/NBR-XVmJNjQ_60.mkv" type="video/mp4">
+          </video>
+        </div>
+        <div class="target-wrapper">
+          <video autoplay muted loop playsinline controls>
+            <source src="./static/videos/1/QM6X_mK_KAE_50.mkv" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
 
