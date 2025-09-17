@@ -15,10 +15,10 @@
     .query-block {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 0;
       margin-bottom: 3rem;
-      overflow-x: auto;
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #ddd;  /* ✅ 구분선 추가 */
     }
     .query-video { flex: 0 0 300px; }
     .query-video video { width: 100%; }
@@ -26,6 +26,7 @@
       flex: 0 0 500px;
       font-size: 1.05rem;
       line-height: 1.5;
+      max-height:380px;
     }
     /* 타겟 비디오 나열을 그리드로 보기 좋게 */
     .target-videos {
@@ -147,7 +148,7 @@
             <span class="author-block">
               Young Kyun Jang<sup>2</sup>,</span>
             <span class="author-block">
-              Chanho Eom<sup>1</sup>,
+              Chanho Eom<sup>1</sup>
             </span>
           </div>
 
