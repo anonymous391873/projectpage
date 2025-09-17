@@ -14,7 +14,7 @@
     /* ====== Layout: Query / Targets ====== */
     .query-block {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 2rem;
       margin-bottom: 3rem;
       overflow-x: auto;
@@ -27,13 +27,16 @@
       font-size: 1.05rem;
       line-height: 1.5;
     }
+    /* 타겟 비디오 나열을 그리드로 보기 좋게 */
     .target-videos {
-      display: flex;
-      flex-wrap: nowrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
-      align-items: flex-start;
     }
-    .target-wrapper { width: 300px; text-align: center; }
+    .target-wrapper {
+      width: 100%;                /* 자동 너비 */
+      max-width: 320px;           /* 너무 커지지 않게 제한 */
+      margin: 0 auto;}
     .target-wrapper video { width: 100%; border: 3px solid #ccc; }
     .target-wrapper video.target { border: 3px solid #2ecc71; }
     .target-caption { margin-top: 0.4rem; font-size: 0.9rem; }
